@@ -32,4 +32,4 @@ Cookie: PHPSESSID=3puonr8mf2gr4m6iivf71mhjtq
 Connection: close
 ```
 
-![sqli](https://user-images.githubusercontent.com/66857673/198275712-19324a37-30d1-4aa4-ab8e-2f573ed90138.png)
+![sqli](https://user-images.githubusercontent.com/66857673/198284625-06ffe752-562a-4772-8f89-ac7e99cb2d75.png)
